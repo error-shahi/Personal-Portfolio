@@ -1,60 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Priyanshu Shahi</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="cyber-canvas"></canvas>
+    <header>
+      <div class="logo">Priyanshu Shahi</div>
+      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Me</h2>
+    <section>
+      <h2 class="section-title">Get In Touch</h2>
 
-    <!-- Profile Card -->
-    <div class="contact-card">
-      <img src="media/i2.jpeg" alt="Profile">
-      <h3>Priyanshu Shahi</h3>
-      <p>B.Tech CSE | Tech Enthusiast | Photographer & Writer</p>
-      <p>Email: <a href="mailto:shahipriyanshu120@gmail.com">shahipriyanshu120@gmail.com</a></p>
-      <p>Phone: +91-7562047542</p>
-    </div>
+      <div class="contact-grid">
+        <!-- Redesigned Contact Info Card -->
+        <div class="glass-card contact-info-card">
+          <div style="text-align: center">
+            <img
+              src="media/i2.jpeg"
+              alt="Priyanshu Shahi"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--accent-cyan);
+                box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+              "
+            />
+            <h3 style="font-size: 1.4rem; margin-top: 10px">Priyanshu Shahi</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              B.Tech CSE | Tech Coordinator
+            </p>
+          </div>
 
-    <!-- Contact Form -->
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="6" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bx bx-envelope"></i></div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.8rem">
+                Email Address
+              </p>
+              <a
+                href="mailto:shahipriyanshu120@gmail.com"
+                style="
+                  color: var(--text-main);
+                  text-decoration: none;
+                  font-weight: 600;
+                "
+                >shahipriyanshu120@gmail.com</a
+              >
+            </div>
+          </div>
 
-    <!-- Social Icons -->
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/priyanshu-shahi-b53b76351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/share/1CZFLZYE7g/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/shahi.priyanshu_?igsh=MXQ3M3Q4dTIzZTB6bA==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/7562047542" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </section>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bx bx-phone"></i></div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.8rem">
+                Phone / WhatsApp
+              </p>
+              <p style="font-weight: 600">+91-7562047542</p>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
-  </footer>
-</body>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bx bx-map"></i></div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.8rem">
+                Campus Location
+              </p>
+              <p style="font-weight: 600">BCET, Durgapur, West Bengal</p>
+            </div>
+          </div>
+
+          <!-- Social Icons (GitHub replaced with Facebook) -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 15px;
+              margin-top: 10px;
+            "
+          >
+            <a
+              href="https://www.linkedin.com/in/priyanshu-shahi-b53b76351"
+              target="_blank"
+              style="color: var(--accent-cyan); font-size: 1.8rem"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://instagram.com/shahi.priyanshu_"
+              target="_blank"
+              style="color: var(--accent-cyan); font-size: 1.8rem"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/7562047542"
+              target="_blank"
+              style="color: var(--accent-cyan); font-size: 1.8rem"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1CZFLZYE7g/"
+              target="_blank"
+              style="color: var(--accent-cyan); font-size: 1.8rem"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Contact Message Form -->
+        <div class="glass-card">
+          <h3
+            style="
+              font-size: 1.4rem;
+              margin-bottom: 20px;
+              color: var(--accent-cyan);
+            "
+          >
+            Send Message
+          </h3>
+          <form style="display: flex; flex-direction: column; gap: 15px">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              style="
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid var(--border-glow);
+                border-radius: 8px;
+                color: #fff;
+                outline: none;
+              "
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              style="
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid var(--border-glow);
+                border-radius: 8px;
+                color: #fff;
+                outline: none;
+              "
+            />
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              required
+              style="
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid var(--border-glow);
+                border-radius: 8px;
+                color: #fff;
+                outline: none;
+              "
+            ></textarea>
+            <button
+              type="submit"
+              style="
+                padding: 12px 30px;
+                background: var(--gradient-aurora);
+                border: none;
+                border-radius: 25px;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+              "
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

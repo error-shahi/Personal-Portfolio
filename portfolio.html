@@ -1,71 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Priyanshu Shahi</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="cyber-canvas"></canvas>
+    <header>
+      <div class="logo">Priyanshu Shahi</div>
+      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Portfolio Section -->
-  <section class="portfolio">
-    <h2>My Portfolio</h2>
+    <section>
+      <h2 class="section-title">Featured Projects & Progress</h2>
 
-    <!-- Coding Projects -->
-    <div class="portfolio-category">
-      <h3>Coding Projects</h3>
-      <div class="grid">
-        <div class="card"><img src="media/web.jpg" alt="Project"><div class="info"><h3>Portfolio Website</h3><p>Personal portfolio showcasing my work.</p></div></div>
-        <div class="card"><img src="media/tip.jpg" alt="Project"><div class="info"><h3>Mini App</h3><p>An Android-based mini app.</p></div></div>
-        <div class="card"><img src="media/cal.jpg" alt="Project"><div class="info"><h3>calculator</h3><p>calculator using HTML and CSS</p></div></div>
+      <div class="projects-grid">
+        <!-- Project 1: Weather Application -->
+        <div class="glass-card">
+          <img src="media/web.jpg" alt="Weather App" class="project-img" />
+          <h3>Weather Web Application</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 8px 0">
+            Glassmorphic web application utilizing Open-Meteo API for real-time
+            telemetry, dynamic background gradients, and hourly/7-day forecast
+            views.
+          </p>
+          <div style="margin-top: 15px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+              "
+            >
+              <span>Completion</span><span>100%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: 3D Dynamic Web App -->
+        <div class="glass-card">
+          <img
+            src="media/web.jpg"
+            alt="3D Web Application"
+            class="project-img"
+          />
+          <h3>3D Dynamic Web App</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 8px 0">
+            Multi-layered web app built with Node.js backend and CSS 3D module
+            transformations[cite: 4].
+          </p>
+          <div style="margin-top: 15px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+              "
+            >
+              <span>Completion</span><span>95%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="95"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Cyberpunk Stopwatch -->
+        <div class="glass-card">
+          <img src="media/tip.jpg" alt="Stopwatch App" class="project-img" />
+          <h3>Cyberpunk Web Stopwatch</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 8px 0">
+            Precision timing web application featuring neon visual time tracking
+            indicators and lap history.
+          </p>
+          <div style="margin-top: 15px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+              "
+            >
+              <span>Completion</span><span>100%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Android Utility App -->
+        <div class="glass-card">
+          <img src="media/tip.jpg" alt="Android App" class="project-img" />
+          <h3>Android Utility Mini App</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 8px 0">
+            Android-based utility app built during technical camps focusing on
+            mobile UX efficiency[cite: 4].
+          </p>
+          <div style="margin-top: 15px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+              "
+            >
+              <span>Completion</span><span>100%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="100"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Photography -->
-    <div class="portfolio-category">
-      <h3>Photography</h3>
-      <div class="grid">
-        <div class="card"><img src="media/s1.jpeg" alt="Photography sample"><div class="info"><p>Rose</p></div></div>
-        <div class="card"><img src="media/s2.jpeg" alt="Photography sample"><div class="info"><p>Night Shot</p></div></div>
-        <div class="card"><img src="media/s3.jpeg" alt="Photography sample"><div class="info"><p>Nature Shot</p></div></div>
-        <div class="card"><img src="media/s4.jpeg" alt="Photography sample"><div class="info"><p>Spider</p></div></div>
+      <!-- Projects In Progress Banner (Updated without rocket) -->
+      <div class="glass-card" style="text-align: center; margin: 40px 0">
+        <h3
+          style="
+            font-size: 1.8rem;
+            background: var(--gradient-aurora);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          "
+        >
+          <i class="bx bx-code-block" style="color: var(--accent-cyan)"></i> And
+          Many More Projects In Progress!
+        </h3>
+        <p style="color: var(--text-muted); margin-top: 8px">
+          Continuously building and deploying full-stack micro-apps, algorithm
+          labs, and web platforms.
+        </p>
       </div>
-      <div class="portfolio-btn">
-        <a href="https://www.instagram.com/shahiphotographs?igsh=YnIzdjhzOHYxdW1s" target="_blank">For more visit shahiphotographs</a>
-      </div>
-    </div>
 
-    <!-- Writing -->
-    <div class="portfolio-category">
-      <h3>Writing</h3>
-      <div class="grid">
-        <div class="card"><img src="media/ws1.jpeg" alt="Writing sample"><div class="info"><p>Shayari</p></div></div>
-        <div class="card"><img src="media/ws2.jpeg" alt="Writing sample"><div class="info"><p>Deep Truth</p></div></div>
-        <div class="card"><img src="media/ws3.jpeg" alt="Writing sample"><div class="info"><p>Quote</p></div></div>
-      </div>
-      <div class="portfolio-btn">
-        <a href="https://www.instagram.com/shayari_by_shahi?igsh=MXVzeXZzZ2N4cjBqdg==" target="_blank">For more visit shahi_ki_kalam</a>
-      </div>
-    </div>
+      <!-- Creative Hobbies Section -->
+      <h2 class="section-title" style="margin-top: 60px">Creative Hobbies</h2>
 
-  </section>
+      <!-- Photography Collage -->
+      <div class="glass-card" style="margin-bottom: 30px">
+        <h3>📷 Macro & Nature Photography</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px">
+          Capturing fine natural details and perspective macro shots[cite: 3].
+        </p>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
-  </footer>
-</body>
+        <div class="collage-grid">
+          <img src="media/s1.jpeg" alt="Nature Shot 1" />
+          <img src="media/s2.jpeg" alt="Night Shot" />
+          <img src="media/s3.jpeg" alt="Nature Shot 2" />
+          <img src="media/s4.jpeg" alt="Spider Macro" />
+        </div>
+
+        <a
+          href="https://www.instagram.com/shahiphotographs"
+          target="_blank"
+          style="
+            display: inline-block;
+            padding: 10px 22px;
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+          "
+          >Visit @shahiphotographs</a
+        >
+      </div>
+
+      <!-- Writing Collage -->
+      <div class="glass-card">
+        <h3>✍️ Writing & Quotes</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px">
+          Writing quotes, short shayari, and reflective thought posts[cite: 3].
+        </p>
+
+        <div class="collage-grid">
+          <img src="media/ws1.jpeg" alt="Writing Sample 1" />
+          <img src="media/ws2.jpeg" alt="Writing Sample 2" />
+          <img src="media/ws3.jpeg" alt="Writing Sample 3" />
+        </div>
+
+        <a
+          href="https://www.instagram.com/shayari_by_shahi"
+          target="_blank"
+          style="
+            display: inline-block;
+            padding: 10px 22px;
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+          "
+          >Visit @shahi_ki_kalam</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

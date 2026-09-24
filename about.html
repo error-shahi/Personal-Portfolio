@@ -1,83 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Priyanshu Shahi</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="cyber-canvas"></canvas>
+    <header>
+      <div class="logo">Priyanshu Shahi</div>
+      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Profile Box -->
-  <section class="about-profile">
-    <div class="profile-box">
-      <img src="media/i.jpeg" alt="Priyanshu's Profile Picture">
-      <div class="bio">
-        <h2>About Me</h2>
-        <p>
-          Hi, I’m <strong>Priyanshu Shahi</strong>. 
-          I'm a student, Currently pursuing B.Tech CSE, from Bengal College of Engineering and Technology, Durgapur.
-          I love to create – whether through code, words, or images.  
-          I explore technology while balancing creativity through writing and photography.  
-          My goal is to blend technical skills with artistic vision.
-        </p>
-      </div>
-    </div>
-  </section>
+    <section>
+      <!-- About Split Layout -->
+      <div class="about-split">
+        <div class="about-photo-wrapper">
+          <img src="media/i.jpeg" alt="Priyanshu Shahi Profile" />
+        </div>
 
-  <!-- Skills Section (Box Format) -->
-  <section class="skills-boxes">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="media/html.png" alt="HTML & CSS">
-        HTML & CSS
+        <div class="glass-card">
+          <h2
+            style="
+              font-size: 2.2rem;
+              margin-bottom: 15px;
+              color: var(--accent-cyan);
+            "
+          >
+            About Me
+          </h2>
+          <p style="color: var(--text-muted); margin-bottom: 15px">
+            I am <strong>Priyanshu Shahi</strong>, currently pursuing my B.Tech
+            in Computer Science & Engineering at Bengal College of Engineering
+            and Technology (BCET), Durgapur[cite: 1].
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 15px">
+            I focus on software engineering fundamentals including Data
+            Structures, Algorithms, C/Python development, and dynamic frontend
+            architectures[cite: 1]. Beyond academia, I take active leadership
+            roles organizing campus technical events and workshops[cite: 1].
+          </p>
+          <p style="color: var(--text-muted)">
+            I balance analytical coding with creative pursuits like macro nature
+            photography and thought writing[cite: 1].
+          </p>
+        </div>
       </div>
-      <div class="skill-card">
-        <img src="media/Python.png" alt="JavaScript">
-        Python
-      </div>
-      <div class="skill-card">
-        <img src="media/C.png" alt="Problem Solving">
-        C
-      </div>
-      <div class="skill-card">
-        <img src="media/p.jpg" alt="Photography">
-        Photography
-      </div>
-      <div class="skill-card">
-        <img src="media/w.jpeg" alt="Writing">
-        Writing
-      </div>
-    
-    </div>
-  </section>
 
-  <!-- Achievements -->
-  <section class="about">
-    <h2>Achievements & Journey</h2>
-    <div class="about-content">
-      <p>📌 Built my first personal portfolio website.</p>
-      <p>📌 Contributed to small coding projects and team assignments.</p>
-      <p>📌Participated in Google Android Development techcamp and got idea about android technology.</p>
-      <p>📌 Started my own photography collection and blog posts.</p>
-      <p>📌 Continuously learning & improving in both tech and art.</p>
-    </div>
-  </section>
+      <!-- Skills Section -->
+      <h2 class="section-title" style="margin-top: 60px">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="glass-card">
+          <div style="display: flex; justify-content: space-between">
+            <span>HTML / CSS / JavaScript</span><span>90%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div style="display: flex; justify-content: space-between">
+            <span>Python Programming</span><span>80%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div style="display: flex; justify-content: space-between">
+            <span>C Language & Data Structures</span><span>85%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div style="display: flex; justify-content: space-between">
+            <span>Frontend Web Architecture</span><span>88%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="88"></div>
+          </div>
+        </div>
+      </div>
 
-  <footer>
-    <p>© 2025 Priyanshu Shahi | All Rights Reserved</p>
-  </footer>
-</body>
+      <!-- Experience Timeline (Separated Clubs & Industry) -->
+      <h2 class="section-title">Leadership & Work Experience</h2>
+
+      <!-- CyberCell BCET Group -->
+      <div class="timeline-section-title">
+        <i class="bx bx-shield-alt-2"></i> CyberCell BCET
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <h3>Organiser</h3>
+          <p style="color: var(--accent-cyan); font-size: 0.9rem">
+            CyberCell BCET
+          </p>
+          <p
+            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
+          >
+            Organizing campus technical bootcamps, managing student developer
+            training, and overseeing web workshops.
+          </p>
+        </div>
+        <div class="timeline-item glass-card">
+          <h3>Coordinator</h3>
+          <p style="color: var(--accent-cyan); font-size: 0.9rem">
+            CyberCell BCET • 1 Year Experience
+          </p>
+          <p
+            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
+          >
+            Coordinated event operations, student registrations, and tech event
+            setups across campus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Robonixx BCET Group -->
+      <div class="timeline-section-title">
+        <i class="bx bx-bot"></i> Robonixx BCET
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <h3>Organiser</h3>
+          <p style="color: var(--accent-cyan); font-size: 0.9rem">
+            Robonixx BCET
+          </p>
+          <p
+            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
+          >
+            Directing robotics exhibitions, technical hackathons, and hardware
+            club activities.
+          </p>
+        </div>
+        <div class="timeline-item glass-card">
+          <h3>Coordinator</h3>
+          <p style="color: var(--accent-cyan); font-size: 0.9rem">
+            Robonixx BCET • 1 Year Experience
+          </p>
+          <p
+            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
+          >
+            Facilitated hardware lab sessions and student project coordination.
+          </p>
+        </div>
+      </div>
+
+      <!-- Industry Role Below -->
+      <div class="timeline-section-title">
+        <i class="bx bx-briefcase"></i> Industry Experience
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <h3>Frontend Developer</h3>
+          <p style="color: var(--accent-cyan); font-size: 0.9rem">
+            DIMIV Soft Pvt Ltd
+          </p>
+          <p
+            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
+          >
+            Built client interface components, optimized page layout flows, and
+            implemented responsive UI CSS systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

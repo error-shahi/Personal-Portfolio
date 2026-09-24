@@ -1,75 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | My Portfolio</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyanshu Shahi | Personal Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="cyber-canvas"></canvas>
+    <header>
+      <div class="logo">Priyanshu Shahi</div>
+      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-  <div>
-    <h2>Hi, I'm Priyanshu 👋</h2>
-    <p>Hope you doing well....😊</p>
-    <a href="portfolio.html">View My Work</a>
-  </div>
-</section>
+    <section>
+      <!-- Integrated Hero Layout -->
+      <div class="hero-wrapper">
+        <div class="glass-card">
+          <span
+            style="
+              color: var(--accent-cyan);
+              font-weight: 600;
+              font-size: 0.9rem;
+              text-transform: uppercase;
+            "
+            >CSE Undergraduate & Developer</span
+          >
+          <h1 style="font-size: 2.8rem; margin: 12px 0">
+            Hi, I'm
+            <span
+              style="
+                background: var(--gradient-aurora);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >Priyanshu Shahi</span
+            >
+            👋
+          </h1>
+          <p style="color: var(--text-muted); margin-bottom: 25px">
+            Passionate Computer Science student at BCET specializing in frontend
+            application development, DSA, and tech event leadership[cite: 1].
+            Blending technical engineering with creative photography and
+            writing[cite: 1].
+          </p>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap">
+            <a
+              href="portfolio.html"
+              style="
+                padding: 12px 28px;
+                background: var(--gradient-aurora);
+                color: #fff;
+                border-radius: 30px;
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >View My Work</a
+            >
+            <a
+              href="contact.html"
+              style="
+                padding: 12px 28px;
+                border: 1px solid var(--border-glow);
+                color: var(--text-main);
+                border-radius: 30px;
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Get In Touch</a
+            >
+          </div>
+        </div>
 
-
-  <!-- Profile Section -->
-  <section class="profile">
-    <img src="media/i.jpeg" alt="Priyanshu's Profile Picture">
-    <h2>Priyanshu Shahi</h2>
-    <p>
-      Welcome to my personal portfolio website. Here you’ll find my projects, skills, and interests.  
-      I’m passionate about coding, writing, and photography.  
-      This space represents my journey of learning and creating!
-    </p>
-  </section>
-
-  <!-- Services Section -->
-  <section class="services">
-    <h2>What I Do</h2>
-    <div class="service-grid">
-      <div class="service-box">
-        <i class='bx bx-analyse'></i>
-        <h3>Studying</h3>
-        <p>I'm a student, currently pursuing Btech CSE and exploring various coding aspects to enhance my skills.</p>
+        <!-- Profile Image Frame -->
+        <div class="hero-profile-container">
+          <div class="profile-frame">
+            <img src="media/i.jpeg" alt="Priyanshu Shahi" />
+          </div>
+        </div>
       </div>
-      <div class="service-box">
-        <i class='bx bx-book'></i>
-        <h3>Writing</h3>
-        <p>Crafting content and quotes that inspire, inform, and shayari to engage readers effectively.</p>
-      </div>
-      <div class="service-box">
-        <i class='bx bx-camera'></i>
-        <h3>Photography</h3>
-        <p>Capturing unique perspectives through my lens and telling visual stories of nature in micro world.</p>
-      </div>
-      <div class="service-box">
-        <i class='bx bx-code-alt'></i>
-        <h3>Web Development</h3>
-        <p>I practice to build responsive, modern websites with clean design and performance in mind.</p>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <p>© 2025 Priyanshu Shahi | All Rights Reserved</p>
-  </footer>
-</body>
+      <!-- Live Animated Stats Grid -->
+      <div class="stats-grid">
+        <div class="glass-card stat-card">
+          <h3 class="stat-number" data-target="10">0+</h3>
+          <p style="color: var(--text-muted)">Completed Projects</p>
+        </div>
+        <div class="glass-card stat-card">
+          <h3 class="stat-number" data-target="30">0+</h3>
+          <p style="color: var(--text-muted)">Domain Certifications</p>
+        </div>
+        <div class="glass-card stat-card">
+          <h3 class="stat-number" data-target="2">0+</h3>
+          <p style="color: var(--text-muted)">Tech Society Roles</p>
+        </div>
+      </div>
+
+      <!-- Interactive Terminal & Current Status Section (Populates Page Space) -->
+      <div class="home-details-grid">
+        <!-- Interactive Terminal Card -->
+        <div class="glass-card terminal-card">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <p style="color: #94a3b8">// Developer Console</p>
+          <p>> const developer = "Priyanshu Shahi";</p>
+          <p>> const status = "Building Web Applications";</p>
+          <p>> const location = "BCET, Durgapur";[cite: 1]</p>
+          <p>
+            > const skills = ["JS", "Python", "C", "DSA", "Web Dev"];[cite: 1]
+          </p>
+          <p style="color: var(--accent-cyan); margin-top: 10px">
+            > System.status: Ready for Opportunities _
+          </p>
+        </div>
+
+        <!-- Current Focus Box -->
+        <div class="glass-card">
+          <h3 style="color: var(--accent-cyan); margin-bottom: 15px">
+            <i class="bx bx-radar"></i> Current Focus & Learning
+          </h3>
+          <ul
+            style="
+              list-style: none;
+              color: var(--text-muted);
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            <li>
+              <i
+                class="bx bx-check-circle"
+                style="color: var(--accent-cyan)"
+              ></i>
+              Advanced Data Structures & Algorithm Optimization[cite: 1]
+            </li>
+            <li>
+              <i
+                class="bx bx-check-circle"
+                style="color: var(--accent-cyan)"
+              ></i>
+              Full-Stack Web App Development using React & Node.js
+            </li>
+            <li>
+              <i
+                class="bx bx-check-circle"
+                style="color: var(--accent-cyan)"
+              ></i>
+              Coordinating Bootcamps for CyberCell & Robonixx[cite: 1]
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
