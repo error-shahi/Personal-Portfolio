@@ -107,7 +107,7 @@ header {
   background: rgba(11, 13, 23, 0.85);
   backdrop-filter: blur(16px);
   display: flex;
-  justify-content: space-between; /* Ensures logo is left and menu/toggle is right */
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
   border-bottom: 1px solid var(--border-glow);
@@ -116,12 +116,12 @@ header {
 /* Mobile & Tablet Responsive Header Fix */
 @media (max-width: 900px) {
   header {
-    padding: 15px 5%; /* Tightens padding for smaller screens */
+    padding: 15px 5%;
   }
 
   .menu-toggle {
     display: block;
-    margin-left: auto; /* Forces the toggle icon to the extreme right end */
+    margin-left: auto;
     font-size: 2rem;
     cursor: pointer;
   }
@@ -206,7 +206,7 @@ section {
   position: relative;
   width: 280px;
   height: 340px;
-  border-radius: 240px;
+  border-radius: 200px;
   overflow: hidden;
   padding: 0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
@@ -216,7 +216,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 200px;
 }
 
 /* About Layout with Integrated Photo */
@@ -345,7 +345,21 @@ section {
   transition: transform 0.3s ease;
 }
 
-.collage-grid img:hover {
+.collage-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.collage-grid1 img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.collage-grid1 img:hover {
   transform: scale(1.05);
 }
 
@@ -478,4 +492,37 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
   margin-top: 40px;
+}
+
+/* Back to Top Floating Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-aurora);
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
 }
