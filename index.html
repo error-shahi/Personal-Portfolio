@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Interactive Cyber Canvas -->
     <canvas id="cyber-canvas"></canvas>
+
+    <!-- Header Navigation -->
     <header>
-      <div class="logo">Priyanshu Shahi</div>
-      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <a href="index.html" class="logo-badge">
+        <span class="logo-dot"></span>
+        <span class="logo">Priyanshu Shahi</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle"><i class="bx bx-menu"></i></div>
       <nav>
-        <ul>
+        <ul id="navMenu">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -25,154 +31,220 @@
       </nav>
     </header>
 
-    <section>
-      <!-- Integrated Hero Layout -->
-      <div class="hero-wrapper">
-        <div class="glass-card">
-          <span
-            style="
-              color: var(--accent-cyan);
-              font-weight: 600;
-              font-size: 0.9rem;
-              text-transform: uppercase;
-            "
-            >CSE Undergraduate & Developer</span
-          >
-          <h1 style="font-size: 2.8rem; margin: 12px 0">
-            Hi, I'm
-            <span
+    <main>
+      <section>
+        <!-- Integrated Hero Layout -->
+        <div class="hero-wrapper">
+          <div class="glass-card">
+            <span class="eyebrow">CSE Undergraduate & Developer</span>
+            <h1 style="font-size: 2.8rem; margin: 12px 0">
+              Hi, I'm
+              <span
+                style="
+                  background: var(--gradient-aurora);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+                >Priyanshu Shahi</span
+              >
+              👋
+            </h1>
+            <p style="color: var(--text-muted); margin-bottom: 25px">
+              Passionate Computer Science student at BCET specializing in
+              frontend application development, DSA, and tech event leadership.
+              Blending technical engineering with creative photography and
+              writing.
+            </p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap">
+              <a href="portfolio.html" class="btn-clay-primary"
+                >View My Work <i class="bx bx-right-arrow-alt"></i
+              ></a>
+              <a href="contact.html" class="btn-clay-secondary">Get In Touch</a>
+            </div>
+          </div>
+
+          <!-- Profile Image Frame -->
+          <div class="hero-profile-container">
+            <div class="profile-frame">
+              <img src="media/i.jpeg" alt="Priyanshu Shahi" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Animated Stats Grid -->
+        <div class="stats-grid">
+          <div class="glass-card stat-card">
+            <h3 class="stat-number" data-target="10">0+</h3>
+            <p style="color: var(--text-muted)">Completed Projects</p>
+          </div>
+          <div class="glass-card stat-card">
+            <h3 class="stat-number" data-target="30">0+</h3>
+            <p style="color: var(--text-muted)">Domain Certifications</p>
+          </div>
+          <div class="glass-card stat-card">
+            <h3 class="stat-number" data-target="2">0+</h3>
+            <p style="color: var(--text-muted)">Tech Society Roles</p>
+          </div>
+        </div>
+
+        <!-- Home Page Detailed Overview Grid -->
+        <div class="home-details-grid">
+          <!-- Terminal Console -->
+          <div class="glass-card terminal-card">
+            <div class="terminal-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <p style="color: #94a3b8">// Developer Console</p>
+            <p>> const developer = "Priyanshu Shahi";</p>
+            <p>> const focus = "Frontend & System Fundamentals";</p>
+            <p>> const location = "BCET, Durgapur";</p>
+            <p>> const skills = ["JS", "Python", "C", "DSA", "Java"];</p>
+            <p style="color: var(--accent-cyan); margin-top: 10px">
+              > System.status: Ready for Opportunities _
+            </p>
+          </div>
+
+          <!-- About Overview Summary -->
+          <div class="glass-card">
+            <span class="eyebrow">ABOUT ME</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #fff">
+              Building Tech Solutions
+            </h3>
+            <p
               style="
-                background: var(--gradient-aurora);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-bottom: 15px;
               "
-              >Priyanshu Shahi</span
             >
-            👋
-          </h1>
-          <p style="color: var(--text-muted); margin-bottom: 25px">
-            Passionate Computer Science student at BCET specializing in frontend
-            application development, DSA, and tech event leadership. Blending
-            technical engineering with creative photography and writing.
-          </p>
-          <div style="display: flex; gap: 15px; flex-wrap: wrap">
+              Combining software development with active campus society roles.
+              Coordinator & Organiser for CyberCell BCET and Robonixx BCET.
+            </p>
             <a
-              href="portfolio.html"
+              href="about.html"
               style="
-                padding: 12px 28px;
-                background: var(--gradient-aurora);
-                color: #fff;
-                border-radius: 30px;
+                color: var(--accent-cyan);
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 700;
+                font-size: 0.88rem;
               "
-              >View My Work</a
-            >
-            <a
-              href="contact.html"
+              >Read full background <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+
+          <!-- Current Focus Card -->
+          <div class="glass-card">
+            <h3
               style="
-                padding: 12px 28px;
-                border: 1px solid var(--border-glow);
-                color: var(--text-main);
-                border-radius: 30px;
-                text-decoration: none;
-                font-weight: 600;
+                color: var(--accent-cyan);
+                margin-bottom: 15px;
+                font-size: 1.2rem;
               "
-              >Get In Touch</a
             >
+              <i class="bx bx-radar"></i> Current Focus
+            </h3>
+            <ul
+              style="
+                list-style: none;
+                color: var(--text-muted);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 0.88rem;
+              "
+            >
+              <li>
+                <i
+                  class="bx bx-check-circle"
+                  style="color: var(--accent-cyan)"
+                ></i>
+                Data Structures & Algorithm Optimization
+              </li>
+              <li>
+                <i
+                  class="bx bx-check-circle"
+                  style="color: var(--accent-cyan)"
+                ></i>
+                Frontend Architecture & React Development
+              </li>
+              <li>
+                <i
+                  class="bx bx-check-circle"
+                  style="color: var(--accent-cyan)"
+                ></i>
+                Organizing Technical Bootcamps & Workshops
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- Profile Image Frame -->
-        <div class="hero-profile-container">
-          <div class="profile-frame">
-            <img src="media/i.jpeg" alt="Priyanshu Shahi" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Live Animated Stats Grid -->
-      <div class="stats-grid">
-        <div class="glass-card stat-card">
-          <h3 class="stat-number" data-target="10">0+</h3>
-          <p style="color: var(--text-muted)">Completed Projects</p>
-        </div>
-        <div class="glass-card stat-card">
-          <h3 class="stat-number" data-target="30">0+</h3>
-          <p style="color: var(--text-muted)">Domain Certifications</p>
-        </div>
-        <div class="glass-card stat-card">
-          <h3 class="stat-number" data-target="2">0+</h3>
-          <p style="color: var(--text-muted)">Tech Society Roles</p>
-        </div>
-      </div>
-
-      <!-- Interactive Terminal & Current Status Section-->
-      <div class="home-details-grid">
-        <!-- Interactive Terminal Card -->
-        <div class="glass-card terminal-card">
-          <div class="terminal-header">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <p style="color: #94a3b8">Developer Console</p>
-          <p>> const developer = "Priyanshu Shahi";</p>
-          <p>> const status = "Building Web Applications";</p>
-          <p>> const location = "BCET, Durgapur";</p>
-          <p>> const skills = ["JS", "Python", "C", "DSA", "Web Dev"];</p>
-          <p style="color: var(--accent-cyan); margin-top: 10px">
-            > System.status: Ready for Opportunities _
-          </p>
-        </div>
-
-        <!-- Current Focus Box -->
-        <div class="glass-card">
-          <h3 style="color: var(--accent-cyan); margin-bottom: 15px">
-            <i class="bx bx-radar"></i> Current Focus & Learning
-          </h3>
-          <ul
-            style="
-              list-style: none;
-              color: var(--text-muted);
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-            "
-          >
-            <li>
-              <i
-                class="bx bx-check-circle"
-                style="color: var(--accent-cyan)"
-              ></i>
-              Advanced Data Structures & Algorithm Optimization
-            </li>
-            <li>
-              <i
-                class="bx bx-check-circle"
-                style="color: var(--accent-cyan)"
-              ></i>
-              Full-Stack Web App Development using React & Node.js
-            </li>
-            <li>
-              <i
-                class="bx bx-check-circle"
-                style="color: var(--accent-cyan)"
-              ></i>
-              Coordinating Bootcamps for CyberCell & Robonixx
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Back to Top Button -->
     <button id="backToTop" title="Go to top">
       <i class="bx bx-up-arrow-alt"></i>
     </button>
 
+    <!-- Synchronized Clay Footer -->
     <footer>
-      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div>
+            <div class="logo">Priyanshu Shahi</div>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.88rem;
+                margin-top: 4px;
+              "
+            >
+              Engineering · Development · Leadership
+            </p>
+          </div>
+
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/priyanshu-shahi-b53b76351"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://instagram.com/shahi.priyanshu_"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/7562047542"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1CZFLZYE7g/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="year">2026</span> Priyanshu Shahi. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

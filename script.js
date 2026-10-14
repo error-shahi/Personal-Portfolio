@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Dynamic Current Year
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
   // Mobile Navigation Toggle
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector("nav ul");
@@ -15,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Smooth Radial Glow Follower for Glass Cards
+  // Radial Glow Movement for Clay Cards
   const glowCards = document.querySelectorAll(".glass-card");
   glowCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -47,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const statNumbers = document.querySelectorAll(".stat-number");
   statNumbers.forEach((stat) => {
     const target = parseInt(stat.getAttribute("data-target"));
-    const duration = 2000; // 2 seconds duration
+    const duration = 2000;
     const stepTime = 30;
     const steps = duration / stepTime;
     const increment = target / steps;
@@ -65,9 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ==========================================================================
 // INTERACTIVE CYBER MESH & CONSTELLATION ANIMATION
-// ==========================================================================
 const initCyberCanvas = () => {
   const canvas = document.getElementById("cyber-canvas");
   if (!canvas) return;
@@ -84,7 +88,6 @@ const initCyberCanvas = () => {
   window.addEventListener("resize", resize);
   resize();
 
-  // Create Node Particles
   const particleCount = Math.floor((width * height) / 18000);
   for (let i = 0; i < particleCount; i++) {
     particles.push({
@@ -96,11 +99,9 @@ const initCyberCanvas = () => {
     });
   }
 
-  // Animation Loop
   const animate = () => {
     ctx.clearRect(0, 0, width, height);
 
-    // Draw and Update Nodes
     for (let i = 0; i < particles.length; i++) {
       let p = particles[i];
       p.x += p.vx;
@@ -109,13 +110,11 @@ const initCyberCanvas = () => {
       if (p.x < 0 || p.x > width) p.vx *= -1;
       if (p.y < 0 || p.y > height) p.vy *= -1;
 
-      // Render Node Dot
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
       ctx.fillStyle = "rgba(0, 242, 254, 0.6)";
       ctx.fill();
 
-      // Connect Nearby Nodes with Subtle Laser Lines
       for (let j = i + 1; j < particles.length; j++) {
         let p2 = particles[j];
         let dx = p.x - p2.x;
@@ -139,11 +138,10 @@ const initCyberCanvas = () => {
   animate();
 };
 
-// Initialize Canvas on DOM Load
 document.addEventListener("DOMContentLoaded", initCyberCanvas);
-// Back to Top Button Logic
-const backToTopBtn = document.getElementById("backToTop");
 
+// Back to Top Floating Button Logic
+const backToTopBtn = document.getElementById("backToTop");
 if (backToTopBtn) {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {

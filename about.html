@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Interactive Cyber Canvas -->
     <canvas id="cyber-canvas"></canvas>
 
     <header>
-      <div class="logo">Priyanshu Shahi</div>
-      <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+      <a href="index.html" class="logo-badge">
+        <span class="logo-dot"></span>
+        <span class="logo">Priyanshu Shahi</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle"><i class="bx bx-menu"></i></div>
       <nav>
-        <ul>
+        <ul id="navMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -27,367 +29,465 @@
       </nav>
     </header>
 
-    <section>
-      <!-- About Split Layout -->
-      <div class="about-split">
-        <div class="about-photo-wrapper">
-          <img src="media/i1.jpeg" alt="Priyanshu Shahi Profile" />
+    <main>
+      <section>
+        <!-- About Split Layout -->
+        <div class="about-split">
+          <div class="about-photo-wrapper">
+            <img src="media/i1.jpeg" alt="Priyanshu Shahi Profile" />
+          </div>
+
+          <div class="glass-card">
+            <span class="eyebrow">BACKGROUND & BIOGRAPHY</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 15px; color: #fff">
+              About Me
+            </h2>
+            <p style="color: var(--text-muted); margin-bottom: 15px">
+              I am <strong>Priyanshu Shahi</strong>, currently pursuing my
+              B.Tech in Computer Science & Engineering at Bengal College of
+              Engineering and Technology (BCET), Durgapur.
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 15px">
+              I focus on software engineering fundamentals including Data
+              Structures, Algorithms, C/Python development, and dynamic frontend
+              architectures. Beyond academia, I take active leadership roles
+              organizing campus technical events and workshops.
+            </p>
+            <p style="color: var(--text-muted)">
+              I balance analytical coding with creative pursuits like macro
+              nature photography and thought writing.
+            </p>
+          </div>
         </div>
 
-        <div class="glass-card">
-          <h2
-            style="
-              font-size: 2.2rem;
-              margin-bottom: 15px;
-              color: var(--accent-cyan);
-            "
-          >
-            About Me
-          </h2>
-          <p style="color: var(--text-muted); margin-bottom: 15px">
-            I am <strong>Priyanshu Shahi</strong>, currently pursuing my B.Tech
-            in Computer Science & Engineering at Bengal College of Engineering
-            and Technology (BCET), Durgapur
-          </p>
-          <p style="color: var(--text-muted); margin-bottom: 15px">
-            I focus on software engineering fundamentals including Data
-            Structures, Algorithms, C/Python development, and dynamic frontend
-            architectures Beyond academia, I take active leadership roles
-            organizing campus technical events and workshops.
-          </p>
-          <p style="color: var(--text-muted)">
-            I balance analytical coding with creative pursuits like macro nature
-            photography and thought writing.
-          </p>
-        </div>
-      </div>
+        <!-- Skills Section -->
+        <h2 class="section-title" style="margin-top: 60px">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between">
+              <span>Frontend Web Architecture</span
+              ><span style="color: var(--accent-cyan); font-weight: 700"
+                >88%</span
+              >
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="88"></div>
+            </div>
+          </div>
 
-      <!-- Skills Section -->
-      <h2 class="section-title" style="margin-top: 60px">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="glass-card">
-          <div style="display: flex; justify-content: space-between">
-            <span>Frontend Web Architecture</span><span>88%</span>
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between">
+              <span>HTML / CSS / JavaScript</span
+              ><span style="color: var(--accent-cyan); font-weight: 700"
+                >90%</span
+              >
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="90"></div>
+            </div>
           </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-progress="88"></div>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div style="display: flex; justify-content: space-between">
-            <span>HTML / CSS / JavaScript</span><span>90%</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-progress="90"></div>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div style="display: flex; justify-content: space-between">
-            <span>Python Programming</span><span>80%</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-progress="80"></div>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div style="display: flex; justify-content: space-between">
-            <span>C & Data Structures</span><span>85%</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-progress="85"></div>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div style="display: flex; justify-content: space-between">
-            <span>OOPs in Java</span><span>75%</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-progress="75"></div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Recent Certifications -->
-      <h2 class="section-title" style="margin-top: 60px">
-        Recent Certifications
-      </h2>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 25px;
-          margin-bottom: 50px;
-        "
-      >
-        <!-- Certificate 1 -->
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between">
+              <span>Python Programming</span
+              ><span style="color: var(--accent-cyan); font-weight: 700"
+                >80%</span
+              >
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="80"></div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between">
+              <span>C & Data Structures</span
+              ><span style="color: var(--accent-cyan); font-weight: 700"
+                >85%</span
+              >
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="85"></div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between">
+              <span>OOPs in Java</span
+              ><span style="color: var(--accent-cyan); font-weight: 700"
+                >75%</span
+              >
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-progress="75"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Certifications -->
+        <h2 class="section-title" style="margin-top: 60px">
+          Recent Certifications
+        </h2>
         <div
-          class="glass-card"
           style="
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
           "
         >
-          <div>
-            <i
-              class="bx bx-award"
+          <div
+            class="glass-card"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <i
+                class="bx bx-award"
+                style="
+                  font-size: 2.2rem;
+                  color: var(--accent-cyan);
+                  margin-bottom: 10px;
+                "
+              ></i>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px">
+                Java Full Stack Developer
+              </h3>
+              <p
+                style="
+                  color: var(--accent-cyan);
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                "
+              >
+                AICTE & EduSkills Virtual Internship
+              </p>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.85rem;
+                  margin-top: 10px;
+                "
+              >
+                Completed 10-week technical internship program focusing on core
+                Java development, frontend integration, and full-stack project
+                execution[cite: 8].
+              </p>
+            </div>
+            <div
               style="
-                font-size: 2.2rem;
-                color: var(--accent-cyan);
-                margin-bottom: 10px;
-              "
-            ></i>
-            <h3 style="font-size: 1.2rem; margin-bottom: 5px">
-              Java Full Stack Developer
-            </h3>
-            <p
-              style="
-                color: var(--accent-cyan);
-                font-size: 0.85rem;
-                font-weight: 600;
+                margin-top: 15px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
               "
             >
-              AICTE & EduSkills Virtual Internship
+              <span style="font-size: 0.8rem; color: var(--text-muted)"
+                >Verified Badge</span
+              >
+              <i
+                class="bx bx-check-shield"
+                style="color: var(--accent-cyan)"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="glass-card"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <i
+                class="bx bx-cloud"
+                style="
+                  font-size: 2.2rem;
+                  color: var(--accent-cyan);
+                  margin-bottom: 10px;
+                "
+              ></i>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px">
+                Google Cloud Arcade Credentials
+              </h3>
+              <p
+                style="
+                  color: var(--accent-cyan);
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                "
+              >
+                Google Cloud / Credly
+              </p>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.85rem;
+                  margin-top: 10px;
+                "
+              >
+                Earned verified skill badges and completed hands-on cloud labs
+                covering deployment, containerization, and infrastructure
+                skills[cite: 8].
+              </p>
+            </div>
+            <div
+              style="
+                margin-top: 15px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span style="font-size: 0.8rem; color: var(--text-muted)"
+                >Credly Verified</span
+              >
+              <i
+                class="bx bx-check-shield"
+                style="color: var(--accent-cyan)"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="glass-card"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <i
+                class="bx bx-certification"
+                style="
+                  font-size: 2.2rem;
+                  color: var(--accent-cyan);
+                  margin-bottom: 10px;
+                "
+              ></i>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px">
+                IT & Web Development Hub
+              </h3>
+              <p
+                style="
+                  color: var(--accent-cyan);
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                "
+              >
+                TCS iON Digital Learning
+              </p>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.85rem;
+                  margin-top: 10px;
+                "
+              >
+                Completed verified digital learning courses in professional
+                development, IT fundamentals, and modern web application
+                concepts[cite: 8].
+              </p>
+            </div>
+            <div
+              style="
+                margin-top: 15px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span style="font-size: 0.8rem; color: var(--text-muted)"
+                >Official Certification</span
+              >
+              <i
+                class="bx bx-check-shield"
+                style="color: var(--accent-cyan)"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <h2 class="section-title">Leadership & Work Experience</h2>
+
+        <!-- CyberCell BCET -->
+        <div class="timeline-section-title">
+          <i class="bx bx-shield-alt-2"></i> CyberCell BCET
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <h3>Organiser</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              CyberCell BCET
             </p>
             <p
               style="
                 color: var(--text-muted);
-                font-size: 0.85rem;
-                margin-top: 10px;
+                font-size: 0.9rem;
+                margin-top: 5px;
               "
             >
-              Completed 10-week technical internship program focusing on core
-              Java development, frontend integration, and full-stack project
-              execution[cite: 1].
+              Organizing campus technical bootcamps, managing student developer
+              training, and overseeing web workshops.
             </p>
           </div>
-          <div
-            style="
-              margin-top: 15px;
-              border-top: 1px solid rgba(255, 255, 255, 0.1);
-              padding-top: 10px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Verified Badge</span
-            >
-            <i class="bx bx-check-shield" style="color: var(--accent-cyan)"></i>
-          </div>
-        </div>
-
-        <!-- Certificate 2 -->
-        <div
-          class="glass-card"
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          "
-        >
-          <div>
-            <i
-              class="bx bx-cloud"
-              style="
-                font-size: 2.2rem;
-                color: var(--accent-cyan);
-                margin-bottom: 10px;
-              "
-            ></i>
-            <h3 style="font-size: 1.2rem; margin-bottom: 5px">
-              Google Cloud Arcade Credentials
-            </h3>
-            <p
-              style="
-                color: var(--accent-cyan);
-                font-size: 0.85rem;
-                font-weight: 600;
-              "
-            >
-              Google Cloud / Credly
+          <div class="timeline-item glass-card">
+            <h3>Coordinator</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              CyberCell BCET • 1 Year Experience
             </p>
             <p
               style="
                 color: var(--text-muted);
-                font-size: 0.85rem;
-                margin-top: 10px;
+                font-size: 0.9rem;
+                margin-top: 5px;
               "
             >
-              Earned verified skill badges and completed hands-on cloud labs
-              covering deployment, containerization, and infrastructure
-              skills[cite: 1].
+              Coordinated event operations, student registrations, and tech
+              event setups across campus.
             </p>
-          </div>
-          <div
-            style="
-              margin-top: 15px;
-              border-top: 1px solid rgba(255, 255, 255, 0.1);
-              padding-top: 10px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Credly Verified</span
-            >
-            <i class="bx bx-check-shield" style="color: var(--accent-cyan)"></i>
           </div>
         </div>
 
-        <!-- Certificate 3 -->
-        <div
-          class="glass-card"
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          "
-        >
-          <div>
-            <i
-              class="bx bx-certification"
-              style="
-                font-size: 2.2rem;
-                color: var(--accent-cyan);
-                margin-bottom: 10px;
-              "
-            ></i>
-            <h3 style="font-size: 1.2rem; margin-bottom: 5px">
-              IT & Web Development Hub
-            </h3>
-            <p
-              style="
-                color: var(--accent-cyan);
-                font-size: 0.85rem;
-                font-weight: 600;
-              "
-            >
-              TCS iON Digital Learning
+        <!-- Robonixx BCET -->
+        <div class="timeline-section-title">
+          <i class="bx bx-bot"></i> Robonixx BCET
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <h3>Organiser</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              Robonixx BCET
             </p>
             <p
               style="
                 color: var(--text-muted);
-                font-size: 0.85rem;
-                margin-top: 10px;
+                font-size: 0.9rem;
+                margin-top: 5px;
               "
             >
-              Completed verified digital learning courses in professional
-              development, IT fundamentals, and modern web application
-              concepts[cite: 1].
+              Directing robotics exhibitions, technical hackathons, and hardware
+              club activities.
             </p>
           </div>
-          <div
-            style="
-              margin-top: 15px;
-              border-top: 1px solid rgba(255, 255, 255, 0.1);
-              padding-top: 10px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Official Certification</span
+          <div class="timeline-item glass-card">
+            <h3>Coordinator</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              Robonixx BCET • 1 Year Experience
+            </p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 5px;
+              "
             >
-            <i class="bx bx-check-shield" style="color: var(--accent-cyan)"></i>
+              Facilitated hardware lab sessions and student project
+              coordination.
+            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Experience Timeline (Separated Clubs & Industry) -->
-      <h2 class="section-title">Leadership & Work Experience</h2>
+        <!-- Industry Experience -->
+        <div class="timeline-section-title">
+          <i class="bx bx-briefcase"></i> Industry Experience
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <h3>Frontend Developer</h3>
+            <p style="color: var(--accent-cyan); font-size: 0.9rem">
+              DIMIV Soft Pvt Ltd
+            </p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 5px;
+              "
+            >
+              Built client interface components, optimized page layout flows,
+              and implemented responsive UI CSS systems.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <!-- CyberCell BCET Group -->
-      <div class="timeline-section-title">
-        <i class="bx bx-shield-alt-2"></i> CyberCell BCET
-      </div>
-      <div class="timeline">
-        <div class="timeline-item glass-card">
-          <h3>Organiser</h3>
-          <p style="color: var(--accent-cyan); font-size: 0.9rem">
-            CyberCell BCET
-          </p>
-          <p
-            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
-          >
-            Organizing campus technical bootcamps, managing student developer
-            training, and overseeing web workshops.
-          </p>
-        </div>
-        <div class="timeline-item glass-card">
-          <h3>Coordinator</h3>
-          <p style="color: var(--accent-cyan); font-size: 0.9rem">
-            CyberCell BCET • 1 Year Experience
-          </p>
-          <p
-            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
-          >
-            Coordinated event operations, student registrations, and tech event
-            setups across campus.
-          </p>
-        </div>
-      </div>
-
-      <!-- Robonixx BCET Group -->
-      <div class="timeline-section-title">
-        <i class="bx bx-bot"></i> Robonixx BCET
-      </div>
-      <div class="timeline">
-        <div class="timeline-item glass-card">
-          <h3>Organiser</h3>
-          <p style="color: var(--accent-cyan); font-size: 0.9rem">
-            Robonixx BCET
-          </p>
-          <p
-            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
-          >
-            Directing robotics exhibitions, technical hackathons, and hardware
-            club activities.
-          </p>
-        </div>
-        <div class="timeline-item glass-card">
-          <h3>Coordinator</h3>
-          <p style="color: var(--accent-cyan); font-size: 0.9rem">
-            Robonixx BCET • 1 Year Experience
-          </p>
-          <p
-            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
-          >
-            Facilitated hardware lab sessions and student project coordination.
-          </p>
-        </div>
-      </div>
-
-      <!-- Industry Role Below -->
-      <div class="timeline-section-title">
-        <i class="bx bx-briefcase"></i> Industry Experience
-      </div>
-      <div class="timeline">
-        <div class="timeline-item glass-card">
-          <h3>Frontend Developer</h3>
-          <p style="color: var(--accent-cyan); font-size: 0.9rem">
-            DIMIV Soft Pvt Ltd
-          </p>
-          <p
-            style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px"
-          >
-            Built client interface components, optimized page layout flows, and
-            implemented responsive UI CSS systems.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Back to Top Button -->
     <button id="backToTop" title="Go to top">
       <i class="bx bx-up-arrow-alt"></i>
     </button>
 
+    <!-- Synchronized Clay Footer -->
     <footer>
-      <p>© 2026 Priyanshu Shahi | Portfolio Website</p>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div>
+            <div class="logo">Priyanshu Shahi</div>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.88rem;
+                margin-top: 4px;
+              "
+            >
+              Engineering · Development · Leadership
+            </p>
+          </div>
+
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/priyanshu-shahi-b53b76351"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://instagram.com/shahi.priyanshu_"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/7562047542"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1CZFLZYE7g/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="year">2026</span> Priyanshu Shahi. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
